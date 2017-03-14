@@ -12,13 +12,9 @@ public class Wood01 extends Actor
      * Act - do whatever the Wood1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int speed = 1;
+    private int speed;
     public Wood01(int direction)
     {
-        GreenfootImage wood1; 
-        wood1 = getImage();
-        
-        setImage(wood1);
         speed = direction;
     }
     public void act() 

@@ -12,7 +12,7 @@ public class Turtle extends Actor
      * Act - do whatever the Turtle wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int speed = -1;
+    private int speed;
     public Turtle(int direction)
     {
         GreenfootImage barrel; 

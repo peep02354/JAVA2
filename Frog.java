@@ -14,7 +14,6 @@ public class Frog extends Actor
     int time = 120;
     public Frog() {
         getImage().scale(40, 40);
-        
         score=0;
     }
     public void act() 
@@ -85,7 +84,6 @@ public class Frog extends Actor
     }
     if (getY() <= 382 && getY() >= 72 && onWood01() == false && onTurtle() == false &&  onWood2() == false)
         {
-            
             setLocation(434,778);
             Greenfoot.playSound("plunk.wav");
         }
@@ -95,19 +93,16 @@ public class Frog extends Actor
         if(isTouching(Lotus.class)){
            score++;
         setLocation(434,778);
-        Greenfoot.playSound("bump.wav");
-        
+        Greenfoot.playSound("bump.wav"); 
     }
 }
     public void Timer(){
         if (cnt%time==0) {
-            time--;
-            
+            time--; 
         }
         if (time==0){
             Greenfoot.setWorld(new End());
-        }
-            
+        }  
         else cnt++;
     }
 }

@@ -72,73 +72,73 @@ public class City extends World
         placeTurtle(-1, 350, 827, 132);
         
     }
-    public void placeWood01(int constructor, int wait, int x, int y)
+    public void placeWood01(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Wood01(constructor), x, y);
 
         }
     }
-    public void placeWood2(int constructor, int wait, int x, int y)
+    public void placeWood2(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Wood2(constructor), x, y);
 
         }
     }
-    public void placeCar1(int constructor, int wait, int x, int y)
+    public void placeCar1(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Car1(constructor), x, y);
 
         }
     }
-    public void placeCar2(int constructor, int wait, int x, int y)
+    public void placeCar2(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Car2(constructor), x, y);
 
         }
     }
-    public void placeCar3(int constructor, int wait, int x, int y)
+    public void placeCar3(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Car3(constructor), x, y);
 
         }
     }
-    public void placeCar4(int constructor, int wait, int x, int y)
+    public void placeCar4(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Car4(constructor), x, y);
 
         }
     }
-    public void placeCar5(int constructor, int wait, int x, int y)
+    public void placeCar5(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Car5(constructor), x, y);
 
         }
     }
-    public void placeCar6(int constructor, int wait, int x, int y)
+    public void placeCar6(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Car6(constructor), x, y);
 
         }
     }
-    public void placeTurtle(int constructor, int wait, int x, int y)
+    public void placeTurtle(int constructor, int delay, int x, int y)
     {
-        if (counter%wait==0)
+        if (counter%delay==0)
         {    
             addObject (new Turtle(constructor), x, y);
 

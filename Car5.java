@@ -12,8 +12,8 @@ public class Car5 extends enemy
      * Act - do whatever the Car5 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private int speed = 1;
-
+    
+    private int speed;
     public Car5(int direction)
     {
         speed = direction;
@@ -23,22 +23,18 @@ public class Car5 extends enemy
         setLocation (getX() + speed, getY());
         if (atWorldEdge() == true)
         {
-            removeMe();
+            getWorld().removeObject(this);
         }
     }   
     public boolean atWorldEdge()
     {
-        if(getX() < 20 || getX() > getWorld().getWidth() - 20)
+        if(getX() < 10 || getX() > getWorld().getWidth() - 10)
             return true;
-        if(getY() < 20 || getY() > getWorld().getHeight() - 20)
+        if(getY() < 10 || getY() > getWorld().getHeight() - 10)
             return true;
         else
             return false;
     }
 
-    private void removeMe()
-    {
-        World w = getWorld();
-        w.removeObject(this);
-    }
+    
 }

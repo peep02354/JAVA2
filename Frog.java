@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Frog extends Actor
 {
     
-    int score;
+    public static int score;
     int cnt = 5;
     int time = 120;
     public Frog() {

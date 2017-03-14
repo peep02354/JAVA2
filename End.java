@@ -34,6 +34,10 @@ public class End extends World
         addObject(mainmenu3,310,356);
         Gameover gameover = new Gameover();
         addObject(gameover,310,52);
+        ScoreBoard scoreboard = new ScoreBoard();
+        addObject(scoreboard,159,192);
+        scoreboard.setLocation(149,188);
+        scoreboard.setLocation(149,168);
     }
 
 }

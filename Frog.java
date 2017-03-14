@@ -81,12 +81,13 @@ public class Frog extends Actor
     {
         if(isTouching(enemy.class)){
         setLocation(434,778);
+        Greenfoot.playSound("squash.wav");
     }
     if (getY() <= 382 && getY() >= 72 && onWood01() == false && onTurtle() == false &&  onWood2() == false)
         {
             
             setLocation(434,778);
-            
+            Greenfoot.playSound("plunk.wav");
         }
     }
     public void survive()
@@ -94,6 +95,7 @@ public class Frog extends Actor
         if(isTouching(Lotus.class)){
            score++;
         setLocation(434,778);
+        Greenfoot.playSound("bump.wav");
         
     }
 }

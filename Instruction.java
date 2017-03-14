@@ -1,21 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Restart here.
+ * Write a description of class Instruction here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Restart extends Actor
+public class Instruction extends Actor
 {
     /**
-     * Act - do whatever the Restart wants to do. This method is called whenever
+     * Act - do whatever the Instruction wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
         if(Greenfoot.mouseClicked(this)){
-        Greenfoot.setWorld(new City());
+        Greenfoot.setWorld(new Howtoplay());
         Greenfoot.playSound("sound.wav");
     }
     }    

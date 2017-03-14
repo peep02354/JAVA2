@@ -19,6 +19,7 @@ private Frog myFrog;
         super(850, 868, 1);
         addObject(new Time(), 795, 837);    
         prepare();
+        setPaintOrder(Frog.class);
     }
     
 

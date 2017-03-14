@@ -32,6 +32,8 @@ public class End extends World
         addObject(haha,304,201);
         Mainmenu mainmenu3 = new Mainmenu();
         addObject(mainmenu3,310,356);
+        Gameover gameover = new Gameover();
+        addObject(gameover,310,52);
     }
 
 }

@@ -19,6 +19,7 @@ public class City extends World
         super(850, 868, 1);
         addObject(new Time(), 795, 837);    
         prepare();
+        setPaintOrder(Frog.class);
     }
     
 
@@ -69,6 +70,7 @@ public class City extends World
         placeWood2(2, 340, 74, 323);
         placeTurtle(-2, 240, 827, 259);
         placeTurtle(-1, 350, 827, 132);
+        
     }
     public void placeWood01(int constructor, int wait, int x, int y)
     {

@@ -20,6 +20,7 @@ public class CityMed extends World
         super(850, 868, 1);
         addObject(new Time(), 795, 837);    
         prepare();
+        setPaintOrder(Frog.class);
     }
     
 

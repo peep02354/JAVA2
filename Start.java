@@ -14,7 +14,9 @@ public class Start extends Actor
      */
     public void act() 
     {
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this)){
         Greenfoot.setWorld(new SelectLevel());
+        Greenfoot.playSound("sound.wav");
+    }
     }    
 }

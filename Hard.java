@@ -14,8 +14,10 @@ public class Hard extends Level
      */
     public void act() 
     {
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this)){
         Greenfoot.setWorld(new CityHard());
+        Greenfoot.playSound("sound.wav");
+    }
     }    
     }    
 

@@ -21,6 +21,7 @@ public class Easy extends Level
     if(Greenfoot.mouseClicked(this))
          {
         Greenfoot.setWorld(new City());
+        Greenfoot.playSound("sound.wav");
     }
     }    
 }
